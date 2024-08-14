@@ -1,0 +1,191 @@
+.product-section {
+    width        : 100%;
+    min-height   : 97vh;
+    padding      : 10px;
+    border-radius: 10px;
+    border-top   : 1px solid #ececec;
+    border-left  : 1px solid #ececec;
+    border-right : 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+.product-header {
+    display    : flex;
+    align-items: center;
+}
+
+.search-section {
+    display        : flex;
+    gap            : 20px;
+    justify-content: flex-end;
+}
+
+.search {
+    width: 200px;
+}
+
+.dropdown-toggle {
+    background-color: #fff;
+    color           : black;
+    border-top      : 1px solid #ececec;
+    border-left     : 1px solid #ececec;
+    border-right    : 1px solid #ececec;
+    border-bottom   : 1px solid #ececec;
+}
+
+.dropdown-toggle:hover {
+    background-color: aliceblue;
+    color           : black;
+    border-color    : rgb(183, 183, 183);
+}
+
+.dropdown-toggle:disabled {
+    background-color: #ececec;
+    color           : black;
+    border-top      : 1px solid #ececec;
+    border-left     : 1px solid #ececec;
+    border-right    : 1px solid #ececec;
+    border-bottom   : 1px solid #ececec;
+}
+
+.no-caret::after {
+    display: none;
+}
+
+.dropdown-btns {
+    display    : flex;
+    margin-left: 20px;
+    gap        : 5px;
+    flex-wrap  : wrap;
+}
+
+.meeting-btn {
+    display        : flex;
+    justify-content: flex-end;
+    gap            : 5px;
+    margin-right   : 20px;
+}
+
+.glass-effect {
+    background     : rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius  : 10px;
+    padding        : 5px;
+    border         : 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.category-glass {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.next-meeting-glass {
+    background-color: rgba(255, 165, 0, 0.2);
+}
+
+.final-row {
+    text-align: end;
+}
+
+.brand-heading {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.notification {
+    margin-left: 10px;
+    font-size  : 10px;
+}
+
+.product-body {
+    display       : flex;
+    flex-direction: column;
+}
+
+.count-display {
+    padding        : 10px;
+    border-radius  : 10px;
+    border-top     : 1px solid #ececec;
+    border-left    : 1px solid #ececec;
+    border-right   : 1px solid #ececec;
+    border-bottom  : 1px solid #ececec;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: center;
+    gap            : 10px;
+    margin         : 100px auto;
+    flex-wrap      : wrap;
+}
+
+.selected-btn {
+    background-color: transparent;
+    border-color    : transparent;
+    color           : black;
+}
+
+.selected-btn:hover {
+    background-color: aliceblue;
+    color           : black;
+}
+
+.archive-btn {
+    background-color: transparent;
+    padding         : 10px;
+    border-radius   : 10px;
+    border-top      : 1px solid #ececec;
+    border-left     : 1px solid #ececec;
+    border-right    : 1px solid #ececec;
+    border-bottom   : 1px solid #ececec;
+    color           : black;
+}
+
+.archive-btn:hover {
+    background-color: aliceblue;
+    color           : black;
+}
+
+.delete-btn {
+    background-color: transparent;
+    padding         : 10px;
+    border-radius   : 10px;
+    border-top      : 1px solid #ececec;
+    border-left     : 1px solid #ececec;
+    border-right    : 1px solid #ececec;
+    border-bottom   : 1px solid #ececec;
+    color           : rgb(159, 47, 47);
+}
+
+.delete-btn:hover {
+    background-color: aliceblue;
+    color           : black;
+}
+
+.modal-contents {
+    text-align: center;
+    font-size : 3rem;
+    color     : red;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+}
+
+@media(max-width: 800px) {
+    .product-header {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        text-align    : center;
+    }
+
+    .dropdown-btns {
+        margin-left: 0px;
+    }
+
+    .meeting-btn {
+        display        : flex;
+        justify-content: center;
+        gap            : 5px;
+        margin-top     : 10px;
+    }
+}
